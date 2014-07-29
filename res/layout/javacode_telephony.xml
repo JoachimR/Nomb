@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:baselineAligned="false">
+
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1"
+                />
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.8"
+                >
+
+
+            <Button
+                    android:id="@+id/btn_getdeviceid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getdeviceid"
+                    />
+
+
+            <Button
+                    android:id="@+id/getline1number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/getline1number"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getsimserialnumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getsimserialnumber"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getallcellinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getallcellinfo"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getcelllocation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getcelllocation"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getvoicemailmumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getvoicemailmumber"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getneighboringcellinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getneighboringcellinfo"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getnetworkcountryiso"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getnetworkcountryiso"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getnetworkoperator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getnetworkoperator"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getnetworktype"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getnetworktype"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getsimcountryiso"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getsimcountryiso"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getsimoperatorname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getsimoperatorname"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getphonetype"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getphonetype"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getsubscriberid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getsubscriberid"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getandroidid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getandroidid"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_appwidgetinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_appwidgetinfo"
+                    />
+
+            <Button
+                    android:id="@+id/btn_bluetoothinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_bluetoothinfo"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_getinputdeviceinfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_getinputdeviceinfo"
+                    />
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1"
+                />
+
+    </LinearLayout>
+
+
+</ScrollView>
+

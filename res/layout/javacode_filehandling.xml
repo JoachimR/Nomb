@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+        <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/javacode_tv_normalfileaccess"
+                    />
+
+            <Spinner android:id="@+id/sp_filejava"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"/>
+
+
+            <EditText
+                    android:inputType="textVisiblePassword"
+                    android:id="@+id/ed_filejava"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/btn_filejava_create"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_create"
+                    />
+            <Button
+                    android:id="@+id/btn_filejava_write"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_write"
+                    />
+            <Button
+                    android:id="@+id/btn_filejava_read"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_read"
+                    />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/javacode_tv_usingcontext"
+                    />
+
+            <EditText
+                    android:inputType="textVisiblePassword"
+                    android:id="@+id/ed_file_internal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/btn_create_internal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_create_internal"
+                    />
+            <Button
+                    android:id="@+id/btn_write_internal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_write_internal"
+                    />
+            <Button
+                    android:id="@+id/btn_read_internal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_read_internal"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

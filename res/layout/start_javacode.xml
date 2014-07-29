@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            >
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:weightSum="1">
+
+
+            <Button
+                    android:id="@+id/btn_start_filehandling"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_start_filehandling"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:weightSum="1">
+
+            <Button android:id="@+id/btn_start_network"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_usenetwork"/>
+
+            <Button
+                    android:id="@+id/btn_start_personalinfo"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_personalinfo"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:weightSum="1">
+
+
+            <Button
+                    android:id="@+id/btn_start_recordaudio"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_recordaudio"
+                    />
+            <Button
+                    android:id="@+id/btn_start_takepicture"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_takepicture"
+                    />
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:weightSum="1">
+
+            <Button android:id="@+id/btn_start_message"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_message"/>
+            <Button android:id="@+id/btn_start_webview"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_webview"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:weightSum="1">
+
+            <Button android:id="@+id/btn_start_nfc"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_nfc"/>
+
+            <Button android:id="@+id/btn_start_packagemanager"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_packagemanager"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:weightSum="1">
+
+            <Button android:id="@+id/btn_start_sensor"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_sensor"/>
+
+            <Button android:id="@+id/btn_start_location"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_location"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:weightSum="1">
+
+            <Button android:id="@+id/btn_start_runcommand"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/btn_start_runcommand"/>
+
+            <!--<Button android:id="@+id/btn_start_runtime"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:text="@string/btn_start_runtime"/>-->
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_fopennative"
+                />
+
+        <Spinner android:id="@+id/sp_fopen"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"/>
+
+        <EditText
+                android:id="@+id/ed_fopen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword"
+                android:text="@string/fopennative_defaultpath"/>
+
+        <Button
+                android:id="@+id/btn_fopen_wplus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_fopen_wplus"
+                />
+        <Button
+                android:id="@+id/btn_fopen_r"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_fopen_r"
+                />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

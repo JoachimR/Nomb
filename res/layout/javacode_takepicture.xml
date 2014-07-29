@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1"
+              android:orientation="vertical">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="0.4"
+                  android:weightSum="1"
+                  android:orientation="vertical">
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/tv_takepicturedescription"
+                />
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="6"
+                android:orientation="horizontal">
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="fill_parent"
+                          android:layout_weight="4"
+                          android:orientation="vertical"
+                          android:weightSum="1">
+                <RelativeLayout
+                        android:background="#FFFFDD"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5">
+                    <FrameLayout
+                            android:layout_centerInParent="true"
+                            android:id="@+id/fl_camera_preview"
+                            android:layout_width="64px"
+                            android:layout_height="48px"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                    <Button
+                            android:id="@+id/btn_camsize_minus"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/btn_camsize_minus"/>
+
+                    <Button
+                            android:id="@+id/btn_camsize_plus"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/btn_camsize_plus"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:weightSum="6"
+            android:orientation="horizontal">
+        <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+        <Button
+                android:id="@+id/btn_changecam"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:text="@string/btn_changetofrontcam">
+        </Button>
+        <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="0.5"
+                  android:orientation="vertical"
+                  android:weightSum="1">
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="0.2"
+                      android:orientation="horizontal"
+                      android:weightSum="1">
+
+            <Button
+                    android:id="@+id/btn_takepreview"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:textSize="12dp"
+                    android:text="@string/btn_takepreview"/>
+
+            <Button
+                    android:id="@+id/btn_takepreviewloop_toogle"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:textSize="12dp"
+                    android:text="@string/btn_takepreviewloop_start"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="0.2"
+                      android:orientation="horizontal"
+                      android:weightSum="1">
+
+            <Button
+                    android:id="@+id/btn_capture"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:textSize="12dp"
+                    android:text="@string/btn_takepicture"/>
+
+            <Button
+                    android:id="@+id/btn_captureloop_toogle"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:textSize="12dp"
+                    android:text="@string/btn_captureloop_start"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="0.6"
+                      android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_lasttakenpicture"/>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="6"
+                    android:background="#333333"
+                    android:orientation="horizontal">
+
+
+                <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"/>
+
+                <ImageView
+                        android:id="@+id/iv_result"
+                        android:layout_weight="4"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/notavailable"
+                        android:contentDescription="@string/iv_result"/>
+
+                <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

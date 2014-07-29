@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nomb</string>
+    <string name="fopennative_defaultpath">/storage/sdcard/hello.txt</string>
+    <string name="fileopen_defaultpath">/storage/sdcard/hello.txt</string>
+    <string name="tv_fopennative">Using fopen() in NDK for file access</string>
+    <string name="tv_fileopen">Java file access path:</string>
+    <string name="btn_fopen_wplus">fopen(path, "w+")</string>
+    <string name="btn_fopen_r">fopen(path, "r")</string>
+    <string name="btn_create">Create file via Java</string>
+    <string name="btn_read">Read from file via Java</string>
+    <string name="btn_write">Write to file via Java</string>
+    <string name="btn_create_internal">Create file via Context</string>
+    <string name="btn_read_internal">Read from file via Context</string>
+    <string name="btn_write_internal">Write to file via Context</string>
+    <string name="btn_readaddressbookinfo">Read Address Book Info</string>
+    <string name="btn_readsmsinfo">Read Sms Info</string>
+    <string name="btn_readphonestate">Read Phone State</string>
+    <string name="btn_readlocation">Read Location Via LocationManager</string>
+    <string name="btn_recordaudiojava">-Record Audio For 5 Seconds Via Java\n\n-Save To File\n\nUsing MediaRecorder.java</string>
+    <string name="btn_recordaudiojava2_start">-START\n\nRecord Audio And Play Back\n\nUsing AudioRecord.java</string>
+    <string name="btn_recordaudiojava2_stop">-STOP\n\nRecord Audio And Play Back\n\nUsing AudioRecord.java</string>
+    <string name="btn_startrecordingnative">START\n\n-Native Recording Via OpenSL \n-Play It Back (Use Headphones!)</string>
+    <string name="btn_stoprecordingnative">STOP\n\n-Native Recording Via OpenSL \n-Play It Back (Use Headphones!)</string>
+    <string name="btn_takepicturenow">Capture Picture Now</string>
+    <string name="iv_picturetaken">Resulting Picture</string>
+    <string name="btn_start_personalinfo">Get Telephony Infos</string>
+    <string name="btn_start_filehandling">File Handling</string>
+    <string name="btn_start_recordaudio">Record Audio</string>
+    <string name="btn_takepicture">Take Picture Now</string>
+    <string name="sv_preview">Preview</string>
+    <string name="btn_start_usenetwork">Use Network</string>
+    <string name="btn_start_message">Send Messages And Read Contacts</string>
+    <string name="btn_start_location">Use Location Services</string>
+    <string name="btn_start_nfc">NFC</string>
+    <string name="btn_start_packagemanager">Read PackageManager Info</string>
+    <string name="btn_start_runcommand">Run Commands</string>
+    <string name="btn_start_runtime">Use Runtime</string>
+    <string name="btn_start_sensor">Read Sensors</string>
+
+    <string name="btn_start_webview">Get WebView Settings</string>
+    <string name="iv_result">Last Taken Picture</string>
+    <string name="tv_lasttakenpicture">Last Taken Picture:</string>
+    <string name="tv_takepicturedescription">Currently the size of the camera preview is 64x48 but
+        one can easily decrease the size, making it almost invisible.
+    </string>
+    <string name="btn_captureloop_start">Start Loop Taking Picture</string>
+    <string name="btn_captureloop_stop">Stop Loop Taking Picture</string>
+    <string name="btn_camsize_plus">+</string>
+    <string name="btn_camsize_minus">-</string>
+    <string name="btn_changetofrontcam">Change To Front Camera</string>
+    <string name="btn_changetobackcam">Change To Back Camera</string>
+    <string name="btn_start_takepicture">Take Picture</string>
+    <string name="dlg_initcam">Initialize Camera...</string>
+    <string name="btn_sendsms">Send SMS</string>
+    <string name="tv_texttosend">Text To Send</string>
+    <string name="tv_numbertosend">Number To Send To</string>
+    <string name="enternumber">Please enter a number !</string>
+    <string name="entertext">Please enter some text !</string>
+    <string name="btn_amcommand">Execute from Native
+        Code:\n
+        system("am start -a android.intent.action.SENDTO -d sms:... --es sms_body \"...\" --ez exit_on_sent true");
+    </string>
+    <string name="tv_sendsmsviaintentdoesnotwork">This does not work on all devices though, because the app
+        is not a system internal app. Only system internal apps are allowed to have the permission
+        INTERACT_ACROSS_USERS_FULL .
+    </string>
+    <string name="btn_takepreviewloop_start">Start Loop Making Preview</string>
+    <string name="btn_takepreviewloop_stop">Stop Loop Making Preview</string>
+    <string name="btn_takepreview">Make Preview Now</string>
+    <string name="btn_appwidgetinfo">Get AppWidget Infos</string>
+    <string name="btn_bluetoothinfo">Get Bluetooth Info</string>
+    <string name="btn_contentproviderinfo">Get Contacts via Content Provider</string>
+    <string name="btn_useinetaddress">Use InetAddress</string>
+    <string name="btn_googleplay_connect">Connect To Google Play Location Service</string>
+    <string name="btn_googleplay_disconnect">Disconnect To Google Play Location Service</string>
+    <string name="btn_googleplay_addgeofence">Add Sample Geofence Via Google Play Location Service</string>
+    <string name="btn_googleplay_removegeofence">Remove Sample Geofence Via Google Play Location Service</string>
+    <string name="btn_getinputdeviceinfo">Get Input Device Info</string>
+    <string name="btn_nmealistener_add">Add Sample Nmea Listener</string>
+    <string name="btn_nmealistener_remove">Remove Sample Nmea Listener</string>
+    <string name="btn_proximity_add">Add Sample Proximity Listener</string>
+    <string name="btn_proximity_remove">Remove Sample Proximity Listener</string>
+    <string name="btn_gpsstatus_add">Add Sample GPS Status Listener</string>
+    <string name="btn_gpsstatus_remove">Remove Sample GPS Status Listener</string>
+    <string name="btn_sendextra">Send ExtraCommand to LocationManager</string>
+    <string name="btn_isconnected">Check Connection To Network</string>
+    <string name="btn_getstate">NetworkInfo.getState()</string>
+    <string name="btn_getdetailedstate">NetworkInfo.getDetailedState()</string>
+    <string name="btn_getextrainfo">NetworkInfo.getExtraInfo()</string>
+    <string name="btn_iteratenetworkinterfaces">Iterate over all Network Interfaces</string>
+    <string name="btn_getnfcadapter">Get NFC Adapter</string>
+    <string name="btn_getinstalledapps">Get Installed Applications</string>
+    <string name="btn_getinstalledpackages">Get Installed Packages</string>
+    <string name="dlg_loading">Loading</string>
+    <string name="btn_getinstalledpackages_ndk">Get Installed Packages Via NDK By Executing\n system(pm list packages)</string>
+    <string name="btn_getpackagesholdingpermissions">Get Packages Holding Permissions Sample Set</string>
+    <string name="btn_querybroadcastreceivers">Query Broadcast Receivers</string>
+    <string name="btn_querycontentproviders">Query Content Providers</string>
+    <string name="btn_queryintentactivities">Query Intent Activities</string>
+    <string name="btn_fetchdiskinfo">Fetch Disk Info</string>
+    <string name="btn_fetchnetstatinfo">Fetch Net Stat Info</string>
+    <string name="btn_fetchprocessinfo">Fetch Process Info</string>
+    <string name="btn_fetchsystemproperties">Fetch System Properties via System.getProperty(...)</string>
+    <string name="btn_shhelloworld">Run sh \"echo \'hello world\'\"</string>
+    <string name="btn_getdefaultsensor">Get Default Sensor</string>
+    <string name="btn_getsensorlist">Get Sensor List</string>
+    <string name="btn_getmessagesfromicc">Get All Messages From Icc</string>
+    <string name="btn_senddatasms">Send Sample Data Message</string>
+    <string name="btn_getwebsettings">Get WebSettings of WebView</string>
+    <string name="btn_setuseragent">Set User Agent to \"new user agent\"</string>
+    <string name="btn_changepage">Change web page</string>
+    <string name="btn_getwifiinfo">Get Wifi Info</string>
+    <string name="dlg_btn_copy">Copy to clipboard</string>
+    <string name="dlg_btn_ok">OK</string>
+    <string name="dlg_title">Result</string>
+    <string name="btn_socketconnectnative">Connect to server and send Hello via NDK</string>
+    <string name="btn_socketconnect">Connect to server and send Hello via Java</string>
+    <string name="btn_runtime_lsdata">su -c ls /data/data (superuser required)</string>
+    <string name="btn_runtime_getlinuxusername">Get Linux User Name for this App (superuser required)</string>
+    <string name="btn_getrunningapps">Get Running Applications</string>
+    <string name="tv_network_serveripaddress">Server IP Address</string>
+    <string name="tv_network_serverport">Server Port</string>
+    <string name="home_intro">Nomb is a proof of concept of what is possible to be performed by an application
+        that has been granted all possible permissions during its installation. Preventing
+        Nomb from doing its tasks can only be accomplished by adding additional security features to the device.
+        So far the focus lies on privacy matters but the application could easily be extended for other purposes.
+         </string>
+    <string name="btn_home_java">What can be done by Java code</string>
+    <string name="btn_home_native">What can be done by native code</string>
+    <string name="javacode_tv_normalfileaccess">Using normal Java file access</string>
+    <string name="javacode_tv_usingcontext">Using Context.openFileOutput(String name, int mode)</string>
+    <string name="btn_sendemail">Send Email</string>
+    <string name="numbersonly">please only enter numbers when sending SMS</string>
+    <string name="enteremailaddress">please enter valid email address</string>
+    <string name="tv_targetemail">Mail To Send To</string>
+    <string name="btn_getdeviceid">getDeviceId()</string>
+    <string name="getline1number">getLine1Number()</string>
+    <string name="btn_getsimserialnumber">getSimSerialNumber()</string>
+    <string name="btn_getallcellinfo">getAllCellInfo()</string>
+    <string name="btn_getcelllocation">getCellLocation()</string>
+    <string name="btn_getvoicemailmumber">getVoiceMailNumber()</string>
+    <string name="btn_getneighboringcellinfo">getNeighboringCellInfo()</string>
+    <string name="btn_getnetworkcountryiso">getNetworkCountryIso()</string>
+    <string name="btn_getnetworkoperator">getNetworkOperator()</string>
+    <string name="btn_getnetworktype">getNetworkType()</string>
+    <string name="btn_getsimcountryiso">getSimCountryIso()</string>
+    <string name="btn_getsimoperatorname">getSimOperatorName()</string>
+    <string name="btn_getphonetype">getPhoneType()</string>
+    <string name="btn_getsubscriberid">getSubscriberId()</string>
+    <string name="btn_getandroidid">ANDROID_ID</string>
+
+</resources>

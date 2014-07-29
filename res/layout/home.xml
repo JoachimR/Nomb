@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="10"
+              android:orientation="vertical"
+              android:padding="5dp"
+        >
+    <ScrollView android:layout_height="0dp"
+                android:layout_width="fill_parent"
+                android:padding="6dp"
+                android:layout_weight="6">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="@string/home_intro"
+                />
+    </ScrollView>
+
+    <Button
+            android:id="@+id/btn_home_java"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:padding="6dp"
+            android:layout_weight="2"
+            android:text="@string/btn_home_java"
+            />
+    <Button
+            android:id="@+id/btn_home_native"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:padding="6dp"
+            android:layout_weight="2"
+            android:text="@string/btn_home_native"
+            />
+</LinearLayout>

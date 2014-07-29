@@ -1,0 +1,90 @@
+0) download ndk and add ndk-build to $PATH
+
+1) create java class
+    
+    package de.reiss.nomb;
+    public class NativeAccess {
+    
+        public native String someMethod();
+    
+        static {
+            System.loadLibrary("de_reiss_nomb_NativeAccess");
+        }
+    }
+
+
+2) create jni folder in root
+
+3) create .c file in jni folder
+
+    de_reiss_nomb_NativeAccess.c
+
+4) write to .c file:
+
+    #include <de_reiss_nomb_NativeAccess.h>
+    
+    JNIEXPORT jstring JNICALL Java_de_reiss_nomb_NativeAccess_someMethod(
+    		JNIEnv* env, jobject thiz) {
+    
+        // do something
+    
+        return (*env)->NewStringUTF(env, str);
+    }
+
+
+5) create .h file in jni folder
+
+    de_reiss_nomb_NativeAccess.h
+
+6) write to .h file:
+
+    #include <jni.h>
+
+    #ifndef _Included_de_reiss_nomb_NativeAccess
+    #define _Included_de_reiss_nomb_NativeAccess
+    #ifdef __cplusplus
+    extern "C" {
+    #endif
+    /*
+     * Class:     de_reiss_nomb_NativeAccess
+     * Method:    someMethod
+     * Signature: ()Ljava/lang/String;
+     */
+    JNIEXPORT jstring JNICALL Java_de_reiss_nomb_NativeAccess_someMethod
+      (JNIEnv *, jobject);
+    
+    #ifdef __cplusplus
+    }
+    #endif
+    #endif
+
+7) create Android.mk in jni folder
+
+8) write to Android.mk
+
+    LOCAL_PATH := $(call my-dir)
+
+    include $(CLEAR_VARS)
+
+    LOCAL_MODULE    := de_reiss_nomb_NativeAccess
+    LOCAL_SRC_FILES := de_reiss_nomb_NativeAccess.c
+
+    LOCAL_LDLIBS := -llog
+
+    include $(BUILD_SHARED_LIBRARY)
+
+
+
+9) go to terminal and go to root dir of the project
+
+10) ndk-build clean
+
+11) //ndk-build
+
+    sh build.sh // <-- makes ndk-build and additional stuff for native audio
+
+    // !!!
+    // sudo apt-get install swig
+    // !!!
+
+12) start app

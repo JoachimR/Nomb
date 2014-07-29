@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:baselineAligned="false">
+
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1"
+                />
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.8"
+                >
+
+            <Button
+                    android:id="@+id/btn_readlocation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_readlocation"
+                    />
+
+
+            <Button
+                    android:id="@+id/btn_gpsstatus_toggle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_gpsstatus_add"
+                    />
+
+            <Button
+                    android:id="@+id/btn_nmealistener_toggle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_nmealistener_add"
+                    />
+
+            <Button
+                    android:id="@+id/btn_proximity_toggle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_proximity_add"
+                    />
+
+
+
+            <Button
+                    android:id="@+id/btn_googleplay_connect_toggle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_googleplay_connect"
+                    />
+            <Button
+                    android:id="@+id/btn_googleplay_addgeofence"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_googleplay_addgeofence"
+                    />
+            <Button
+                    android:id="@+id/btn_googleplay_removegeofence"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/btn_googleplay_removegeofence"
+                    />
+
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1"
+                />
+
+    </LinearLayout>
+
+
+</ScrollView>
+
