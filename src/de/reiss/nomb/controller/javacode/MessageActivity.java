@@ -55,7 +55,7 @@ public class MessageActivity extends Activity {
                 findViewById(R.id.ed_texttosend);
 
         //debug sample
-        ed_numbertosend.setText("4915150734033");
+        ed_numbertosend.setText("12345");
         ed_mailtosend.setText("some@one.com");
         ed_texttosend.setText("some text to send");
 
